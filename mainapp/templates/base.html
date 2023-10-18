@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dtrans</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+<header>
+    <h1>Dtrans</h1>
+    <nav>
+        <div class="home">
+            <a href="{% url 'mainapp:home' %}" class="nav-link">Home</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="nav-link">About us</a></li>
+                <li><a href="#" class="nav-link">Docs</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

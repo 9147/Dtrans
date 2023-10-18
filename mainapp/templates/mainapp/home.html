@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'mainapp/home.css' %}">
+{% endblock extra_css %}
+{% block content %}
+<div class="block">
+    <button onclick="loadtext()";>
+        Text
+    </button>
+    <button>
+        Audio
+    </button>
+    <script>
+        function loadtext(){
+            window.location.href = "{% url 'mainapp:text' %}";
+        }
+    </script>
+{% endblock content %}
