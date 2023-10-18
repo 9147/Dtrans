@@ -1,0 +1,2 @@
+# Dtrans
+Django translation application
